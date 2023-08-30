@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Readmission Application Form</title>
+        <style>
+            .heading {
+                color:maroon;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                text-shadow: 2px 1px rgb(145, 139, 139);
+            }
+            td {
+                color:rebeccapurple;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                font-size: 15px;
+            }
+            .phone {
+                color:rebeccapurple;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                font-size: 15px;
+            }
+            .email {
+                color:rebeccapurple;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                font-size: 15px;
+            }
+            #country {
+                width:100%;
+            }
+            tr {
+                height:40px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="heading">Readmission Application Form</div>
+            <table>
+                <tr>
+                    <td>                    
+                        <label for="fname">Student's Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First">
+                    </td>
+                    <td>                       
+                        <br><input type="text" id="lname" name="lname" placeholder="Last">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="id">Student's ID</label><br>
+                        <input type="text" id="id" name="id">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="text" id="dob" name="dob" placeholder="DD/MM/YY">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label><br>
+                        <input type="text" id="phone" name="phone" placeholder="### ### ####">
+                    </td>
+                    <td>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="street">Address</label><br>
+                        <input type="text" id="street" name="street" placeholder="Street Address" style="width:100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" id="street" name="street" placeholder="Street Address line 2" style="width:100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </td>
+                    <td>
+                        <input type="text" id="region" name="region" placeholder="Region">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="postal" name="postal" placeholder="Postal Code">
+                    </td>
+                    <td>
+                        <select id="country" name="region">
+                            <option value="">Select country</option>
+                            <option value="AU">Australia</option>
+                            <option value="EN">England</option>
+                            <option value="RU">Russia</option>
+                            <option value="GE">Germany</option>
+                            <option value="IND">India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="international-y-n">Are you an international student?</label>
+                    </td>
+                    <td>
+                        <label id="hispanic-latino">Are you Hispanic or Latino?</label>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input type="radio" id="internationalstudent-yes" name="student" value="Y">
+                        <label>Yes</label>
+                        <input type="radio" id="internationalstudent-no" name="student" value="N">
+                        <label>No</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="hispanic-latino-yes" name="student" value="Y" >
+                        <label>Yes</label>
+                        <input type="radio" id="hispanic-latino-no" name="student" value="N">
+                        <label>No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>In which category you identify yourself as a member</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> Asian
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> Black or African American
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> American Indian
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> White
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Previously Attended:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="undergraduate" name="previouslyattend" value="Y">
+                        <label>Undergraduate</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="online-continuing education" name="previouslyattend" value="Y">
+                        <label>Online & Continuing Education</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Degree program at the time of disconituniation</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" style="width:100%";>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Program you are seeking readmission to </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" style="width:100%";>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Term you want to begin readmission</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="fall-y" name="season" value="y">
+                        <label>Fall</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="spring-y" name="season" value="y">
+                        <label>Spring</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="summer-y" name="season" value="y">
+                        <label>Summer</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Year</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" style="width:100%";>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Did you attend other institution during your absence?
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="otherinstitution-y" name="otherinstitution" value="y">
+                        <label>Yes</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="otherinstitution-n" name="otherinstitution" value="N">
+                        <label>No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Have you ever been convicted of any crime?
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="crime-y" name="crime" value="y">
+                        <label>Yes</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="crime-n" name="crime" value="N">
+                        <label>No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Student Signature
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <canvas width="100%" height="100%"></canvas>
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+
+
+
+            </table>
+        </form>
+    </body>
+</html>
