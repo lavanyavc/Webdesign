@@ -3,72 +3,122 @@
     <head>
         <title>Bus Booking Layout</title>
         <style>
-            .header {
+
+            .content {
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 15pt;
                 background-color: rgb(176, 209, 238);
                 color: rgb(1, 1, 15);
-                width: 250px;
+                width: 350px;
                 text-align: center ;
             }
-            /* p {
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 25pt;
-                background-color: rgb(176, 209, 238)
-            } */
             .flex-container {
                 display: flex;
                 flex-wrap: wrap;
-                background-color: rgb(214, 90, 90);
-                /* height: 50px; */
+                background-color: rgb(255, 255, 255);
                 width: fit-content;
+                align-items: center;
+                border: 1px 1px 0.2px 1px solid; 
 
             }
-            .box {
-                background-color: rgb(180, 179, 178);
+            .direction {
+                background-color: rgb(236, 234, 231);
                 margin:10px;
-                padding:20px;
-                height:35px;
-                width:10px;
-                border-radius: 5px; 
-                font-size: 15px;
-                text-align: center;               
+                width:155px;
+                font-size: 15pt;
+                text-align: center;   
+                line-height:25px; 
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                cursor: pointer;
+                height: 30px;
             }
-            .passage {
-                margin-right: 50px;
+
+            .box {
+                background-color: rgb(236, 234, 231);
+                margin:10px;
+                padding:10px;
+                height:85px;
+                width:56.5px;
+                border-radius: 8px; 
+                font-size: 15pt;
+                text-align: center;   
+                line-height:65px; 
+                color: rgb(12, 12, 12);
+                cursor: pointer; 
+                font-weight: bold;
+                          
+            }
+            .left {
+                margin-right: 70px;
+            }
+            .direction:hover, .box:hover {
+                background-color: rgb(131, 133, 131);
+            }
+             li {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12pt;
+                color: rgb(10, 10, 10);
+                text-decoration: underline;
+                display: inline;
+                list-style: none;
+                padding:5px 40px 0px 0px;
+                cursor: pointer;
+                margin-left:-35px;
+                font-weight: bold;
+                text-align: center;
+                width: fit-content;
+            }
+            li:hover {
+                text-decoration-color: rgb(146, 38, 5);
+                color:  rgb(146, 38, 5);
+
             }
          </style>
     </head>
     <body>
-        <div class="header">
-            Welcome to VRL Booking<br>
-            <font size="4pt">A/C Sleeper 2+1</font>
+        <div class="content">
+            <img src="./icons/left-arrow-alt-regular-24.png" style="float:left;">
+            Select your seat<br>
+            <font size="3pt">A/C Sleeper (2+1)</font>
         </div>
         <div class="flex-container">
-            <div class="box passage">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
+            <div class="direction">Lower</div>
+            <div class="direction">Upper</div>
         </div>
         <div class="flex-container">
-            <div class="box passage">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
+            <div class="box left">1</div>
+            <div class="box center">2</div>
+            <div class="box right">3</div>
         </div>
         <div class="flex-container">
-            <div class="box passage">7</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
+            <div class="box left">4</div>
+            <div class="box center">5</div>
+            <div class="box right">6</div>
         </div>
         <div class="flex-container">
-            <div class="box passage">10</div>
-            <div class="box">11</div>
-            <div class="box">12</div>
+            <div class="box left">7</div>
+            <div class="box center">8</div>
+            <div class="box right">9</div>
         </div>
         <div class="flex-container">
-            <div class="box passage">13</div>
-            <div class="box">14</div>
-            <div class="box">15</div>
+            <div class="box left">10</div>
+            <div class="box center">11</div>
+            <div class="box right">12</div>
         </div>
+        <div class="flex-container">
+            <div class="box left">13</div>
+            <div class="box center">14</div>
+            <div class="box right">15</div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>AMENITIES</li>
+                <li>REVIEW</li>
+                <li>POLICIES</li>
+                <li>REST STOPS</li>
+            </ul>
+        </footer>
 
     </body>
 </html>
