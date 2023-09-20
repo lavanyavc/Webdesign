@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Animated GANAPATHI</title>
-    <style>
+        <title>Animated GANAPATHI</title>
+            <style>
+                div {
+                    /* display: flex;
+                    justify-self: center; */
+                    width: 100%;
+                    height: 2620px;
+                    background-color: blueviolet;
+                    background-image: url(./images/Space\ Ganesha-01.jpg),url(./images/Cartoon_space_rocket.png);
+                    background-repeat: no-repeat,no-repeat;
+                    /* background-size:100% 100%,700px 700px; */
+                    background-size: 100% 100%, 700px 700px;
+                    /* background-position: bottom center, left center; */
 
-    </style>
+                }
+                /* .image1 {
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    width: 50%;
+                    /* margin-left: 25%;
+                    margin-right: 25%; */
+                /* }
+                .image2 {
+                    display: flex;
+                    justify-self: center;
+                    overflow: hidden;
+                    width:700px;
+                    height:700px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    rotate: 30deg;
+                    animation-name:rocket;
+                    animation: fly 5s linear infinite;
+                } */ */
+
+                @keyframes fly {
+                    0% {
+                        transform: translate(0,0px);
+                    }
+                    25% {
+                        transform: translate(0,10px);
+                    }
+                    50% {
+                        transform: translate(0,0px);
+                    }
+                    75% {
+                        transform: translate(0,-10px);
+                    }
+                    100% {
+                        transform: translate(0,0px);
+                    }
+                }
+
+        </style>
     </head>
     <body>
+        <div>
+            <!-- <div class=image1 style="background-image: url(./images/Space\ Ganesha-01.jpg);"></div>
+            <div class=image2><img src="./images/Cartoon_space_rocket.png"></div> -->
+        </div>
         
     </body>
 </html>
