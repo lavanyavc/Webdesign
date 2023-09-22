@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Grid Topic</title>
+        <style>
+         .grid-container {
+                background-color:#2196F3;
+                display: grid;
+                gap: 20px;
+                padding: 10px;
+                /* grid-template-columns: 200px 200px 200px;
+                grid-template-rows: 150px 150px 150px 150px; */
+            }
+            .items {
+                /* background-color: rgba(31, 199, 59, 0.8); */
+                text-align: center;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .box1 {
+                grid-column: 1/ span 2;
+                grid-row: 1 ;
+                background-color: blue;
+                }
+            .box2 {
+                grid-column: 3;
+                grid-row: 1/ span 3;
+                background-color: rgb(17, 141, 93);
+            }
+            .box4 {
+                grid-column: 1;
+                grid-row: 3 ;
+                background-color: blueviolet;
+            }
+            .box3 {
+                grid-column:2;
+                grid-row:2 / span 2;
+                background-color: rgba(88, 17, 17, 0.8);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="items box1">Box1</div>
+            <div class="items box2">Box2</div>
+            <div class="items box3">Box3</div>
+            <div class="items box4">Box4</div>
+        </div>
+    </body>
+</html>
