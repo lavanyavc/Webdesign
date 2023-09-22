@@ -3,65 +3,56 @@
     <head>
         <title>Animated GANAPATHI</title>
             <style>
-                div {
-                    /* display: flex;
-                    justify-self: center; */
-                    width: 100%;
-                    height: 2620px;
-                    background-color: blueviolet;
-                    background-image: url(./images/Space\ Ganesha-01.jpg),url(./images/Cartoon_space_rocket.png);
-                    background-repeat: no-repeat,no-repeat;
-                    /* background-size:100% 100%,700px 700px; */
-                    background-size: 100% 100%, 700px 700px;
-                    /* background-position: bottom center, left center; */
-
-                }
-                /* .image1 {
+               .image1 {
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    overflow: hidden;
-                    width: 50%;
-                    /* margin-left: 25%;
-                    margin-right: 25%; */
-                /* }
+                    overflow: hidden; 
+                    position: relative;
+                    align-items: center;
+                }
                 .image2 {
-                    display: flex;
-                    justify-self: center;
-                    overflow: hidden;
-                    width:700px;
-                    height:700px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    rotate: 30deg;
-                    animation-name:rocket;
-                    animation: fly 5s linear infinite;
-                } */ */
+                    animation-name: rotate;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    position: absolute;
+                    top: 650px;
+                    left: 1400px;
+                    width:1500px;
+                    height:1500px;
+                }
+                p {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                    font-size: 65pt;
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    position: absolute;
+                    top:2%;
+                    right:20%;
+                    /* border: 1px solid;
+                    border-radius:10px ;
+                    cursor: pointer; */
+                }
 
-                @keyframes fly {
+                @keyframes rotate {
                     0% {
-                        transform: translate(0,0px);
-                    }
-                    25% {
-                        transform: translate(0,10px);
-                    }
-                    50% {
-                        transform: translate(0,0px);
-                    }
-                    75% {
-                        transform: translate(0,-10px);
+                        transform:rotate(0deg);
                     }
                     100% {
-                        transform: translate(0,0px);
+                        transform:rotate(360deg);
+
                     }
                 }
-
-        </style>
+            </style>
     </head>
     <body>
-        <div>
-            <!-- <div class=image1 style="background-image: url(./images/Space\ Ganesha-01.jpg);"></div>
-            <div class=image2><img src="./images/Cartoon_space_rocket.png"></div> -->
-        </div>
-        
+            <div class=image1>
+                <img src="./images/Space Ganesha-01.jpg">
+                <p>Ganpati Bappa Morya!<br><br>May Lord Ganesha shower wisdom, intelligence, prosperity, happiness & success.<br><br>Wish you a great Ganesh Chaturthi!</p>
+            </div>
+            <div class=image2><img src="./images/Cartoon_space_rocket.png" ></div>
+
     </body>
 </html>
