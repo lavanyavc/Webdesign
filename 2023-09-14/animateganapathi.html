@@ -30,11 +30,20 @@
                     font-weight: bold;
                     position: absolute;
                     top:2%;
-                    right:20%;
-                    /* border: 1px solid;
-                    border-radius:10px ;
-                    cursor: pointer; */
-                }
+                    text-align: center;
+                    cursor: pointer;
+                    display: block;
+                    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+                    transition:
+                                width 2s,
+                                height 2s,
+                                background-color 2s,
+                                rotate 2s;
+                    }
+                    p:hover {
+                        background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+                        rotate: 360deg;
+                    }
 
                 @keyframes rotate {
                     0% {
@@ -50,7 +59,7 @@
     <body>
             <div class=image1>
                 <img src="./images/Space Ganesha-01.jpg">
-                <p>Ganpati Bappa Morya!<br><br>May Lord Ganesha shower wisdom, intelligence, prosperity, happiness & success.<br><br>Wish you a great Ganesh Chaturthi!</p>
+                <p>Ganpati Bappa Morya!<br><br>Wish you a Great and Happy Ganesh Chaturthi!</p>
             </div>
             <div class=image2><img src="./images/Cartoon_space_rocket.png" ></div>
 
