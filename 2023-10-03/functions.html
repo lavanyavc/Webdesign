@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions of Javascript</title>
+    </head>
+    <body>
+        <script>
+            // No Params, No Return
+            // Called function
+            function add1(){
+                let x = 10;
+                let y = 20;
+                let z = x + y;
+                document.write('<br>' + z);
+            }
+
+            // Params, No Return
+            function add2(a=20, b=10){
+                let z = a + b;
+                document.write('<br>' + z);
+            }
+
+            // No Params, Return
+            function add3(){
+                let x = 30;
+                let y = 40;
+                let z = x + y;
+                return z;
+            }
+            let returnValue = add3();
+            document.write('<br>' + returnValue);
+
+            // Params, Return
+            function add4(x, y){
+                return (x + y);
+            }
+            returnValue = add4(100, 200);
+            document.write('<br>' + returnValue);            
+            // Caller = function call
+            add1();
+
+            add2();
+
+            // Params, Return with default param
+            function display(x, y, z=true){
+                if(z){
+                    return x + " " + y;
+                } else {
+                    return y + " " + x;
+                }
+            }
+
+            returnValue = display("Kishan", "Ravindra", true);
+            document.write('<br>' + returnValue);
+
+            returnValue = display("Kishan", "Ravindra", false);
+            document.write('<br>' + returnValue);
+
+            returnValue = display("Kishan", "Ravindra");
+            document.write('<br>' + returnValue);
+
+
+            function diameter(r){
+                return 2 * r;
+            }
+
+            function pi(){
+                return 3.142;
+            }
+
+            function area(r){
+                let a = pi() * diameter(r);
+                document.write('<br>'+a+' sq units');
+            }
+
+            area(10);
+
+
+            function test(a, i){
+                document.write(a);
+                if(i == 20){
+                    return;
+                }
+                i++;
+                test(a, i);
+            }
+
+            test("<br>Kishan", 0);
+ 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Object Data type</title>
+      </head>
+      <body>
+            <script>
+                  // var a = {
+                  //       Fname:"Aarya",
+                  //       Lname:"Bhat",
+                  //       age:28,
+                  //       email:"aarya@gmail.com"
+                  // }
+                  // console.log(a);
+                  // document.write(a.email);
+
+                  var a = {
+                        Fname:"Aarya",
+                        Lname:"Bhat",
+                        age:28,
+                        email:"aarya@gmail.com",
+                        fullName: function() {
+                        return this.Fname+ " " + this.Lname;
+                        }               
+                        }          
+                  document.write(a.fullName());
+            </script>
+            
+      </body>
+</html>

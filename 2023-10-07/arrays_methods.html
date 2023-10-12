@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array's Methods</title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+            // Array Pop
+            // var fruits = ["Banana","Grapes","Apple","Watermelon"];
+            // fruits.pop();
+            // document.getElementById("result").innerHTML=fruits;
+
+            // // Array push
+            // var fruits = ["Banana","Grapes","Apple","Watermelon"];
+            // fruits.push();
+            // document.getElementById("result").innerHTML=fruits;
+
+            // Array Shift
+            // var names = ["Kishan","Lavanya","Advith"];
+            // names.shift();
+            // document.getElementById("result").innerHTML=names;
+            
+            // Array Unshift
+            // var names = ["Kishan","Lavanya","Advith"];
+            // names.unshift();
+            // document.getElementById("result").innerHTML=names;
+
+            // Array Concatenating
+            // var name = ["Advith"];
+            // var b =name.concat() +" "+ "Kishan";
+            // document.getElementById("result").innerHTML=b;
+
+            // Array Concatenating
+            // var a = ["Advith","Kishan"];
+            // var b =a.join(" and ");
+            // document.getElementById("result").innerHTML=b;
+
+            // var a = [1, 2, 3, 4, 5];
+            // var b = a.join(0);
+            // document.getElementById("result").innerHTML=b;
+
+            // Array Slice
+            // var fruits = ["Banana","Grapes","Apple","Watermelon"];
+            // var b = fruits.slice(2);
+            // document.getElementById("result").innerHTML=b;
+            
+            // // Array Splice
+            // var fruits = ["Banana", "Grapes", "Apple", "Watermelon"];
+            // var b = fruits.splice(1,2);
+            // document.getElementById("result").innerHTML=b;
+
+            var fruits = ["Banana", "Grapes", "Apple", "Watermelon"];
+            let result = fruits.splice(1 ,0, "kiwi");
+            document.getElementById("result").innerHTML=result;
+                        
+            // Array Reverse
+            // var fruits = ["Banana", "Grapes", "Apple", "Watermelon"];
+            // var b = fruits.reverse();
+            // document.getElementById("result").innerHTML=b;
+
+            // Array Sort
+            //  var fruits = ["Banana", "Grapes", "Apple", "Watermelon"];
+            // var b = fruits.sort();
+            // document.getElementById("result").innerHTML=b;
+
+
+            // var number = [10,40,70,90,-20,-50,100]
+            // document.getElementById("result").innerHTML=number;
+            // number.sort(function(a,b){return a-b});       
+            // document.getElementById("result").innerHTML=number;
+
+            // var car = [ 
+            //     {type:"Volvo", year:2016},
+            //     {type:"Saab", year:2001},
+            //     {type:"BMW", year:2010},
+            // ];
+            // document.getElementById("result").innerHTML=car;
+            // car.sort(function(a,b){return a.year-b.year});
+            // displayCars();
+
+            // function displayCars() {
+            //     document.getElementById("result").innerHTML =
+            //     car[0].type+ " "+car[0].year + "<br>"+car[1].type+ " "+car[1].year+"<br>"+car[2].type+ " "+car[2].year;
+            // }
+
+            // Array filter
+            // var age = [15,21,22,16,18];
+            // var b = age.filter(CheckAdult);
+            // function CheckAdult(age) {
+            //     return age>=18;
+            // }
+            // document.getElementById("result").innerHTML=b;
+
+            // var a=10;
+            // var b=20;
+            // var c=a+b;
+            
+            // function add(a,b){
+            //     return a*b;
+            // }
+            // document.getElementById("result").innerHTML=c;
+
+            // Array map
+            // var numbers = [4,9,16,25,36];
+            // var b = numbers.map(Math.sqrt)
+            // document.getElementById("result").innerHTML=b;
+        
+            // var numbers = [1,2,3,4,5];
+            // var b = numbers.map(myFunction)
+            // document.getElementById("result").innerHTML=b;
+
+            // function myFunction(numbers){
+            //     return numbers*10;
+            // }
+
+            // Array Reduce
+            // var numbers = [1,2,3,4,5];
+            // var total = 0;
+            // var b = numbers.reduce(myFunction)
+            // document.getElementById("result").innerHTML=b;
+
+            // function myFunction( total,numbers){
+            //     return total*numbers;
+            // }
+
+            // Array Some
+            // var age = [10,9,11,18];
+            // var b = age.some(CheckAdult);
+            // function CheckAdult(age) {
+            //     return age>=18;
+            // }
+            // document.getElementById("result").innerHTML=b;
+        </script>
+    </body>
+</html>

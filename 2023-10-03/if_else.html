@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If & Else Statement</title>
+    </head>
+    <body>
+        <p id="marks"></p>
+    
+        <script>
+            // const searchParams = new URLSearchParams(window.location.search);
+            // var per=searchParams.get('p');
+            var result="invalid percentage";
+            var per=85;
+            if (per>80 && per<100) {
+                result="first rank";
+            } else if (per>=60 && per<=80) {
+                result="second rank";
+            } else if (per>=40 && per<60) {
+                result="third rank";
+            } else if (per>=35 && per<40) {
+                result="pass";
+            } else if (per<35 && per>0) {
+                result="fail";
+            } else {
+                result="invalid percentage";
+            }
+            document.getElementById("marks").innerHTML=result;            
+
+
+      
+        </script>
+    </body>
+</html>
