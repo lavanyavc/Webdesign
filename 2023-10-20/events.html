@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Mouse Over Events</title>
+      </head>
+      <body>
+            <h1>Click here</h1>
+            <div id="demo">
+                  <button onclick="myclick()">Click</button>
+            </div>
+            <h2 id="abc" onmouseover="mouseover()" onmouseout="mouseout()">Programing Languages</h2>
+            <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Jaca Script</li>
+                  <li>Bootstrap</li>
+            </ul>
+            <img id="img1" src="./imgs/img up.png." onmouseover="mouseover()" onmouseout="mouseout()" width="200px" height="150px">
+           
+            <script>
+                  document.querySelector("h1").style.color="green";
+
+                  function myclick() {
+                        document.getElementById("demo").innerHTML=new Date();
+                  }
+
+                  function mouseover() {
+                        document.getElementById("abc").style.color="green";
+                  }  
+
+                  function mouseout() {
+                        document.getElementById("abc").style.color="red";
+                  }
+
+                  function mouseover() {
+                        document.getElementById("img1").style.width="400px";
+                        document.getElementById("img1").style.height="300px";
+                  }
+
+                  function mouseout() {
+                        document.getElementById("img1").style.width="200px";
+                        document.getElementById("img1").style.height="150px";
+                  }
+
+                  
+
+
+
+               
+
+
+
+                 
+            
+            </script>
+      </body>
+</html>
