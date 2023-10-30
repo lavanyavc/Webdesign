@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Boolean Data Type</title>
+      </head>
+      <body>
+            <p id="result"></p>
+            <script>
+                  var a = 10;
+                  var b = 5;
+                  var c = Boolean(a>b);
+                  document.getElementById("result").innerHTML=c;
+
+                  var x = 0;
+                  document.getElementById("result").innerHTML=Boolean(x);
+
+                  var x = "";
+                  document.getElementById("result").innerHTML=Boolean(x);
+
+                  var x;
+                  document.getElementById("result").innerHTML=Boolean(x);
+
+                  var x = "true";
+                  document.getElementById("result").innerHTML=Boolean(x);
+
+                  var x = "true"/10;
+                  document.getElementById("result").innerHTML=Boolean(x);
+
+
+
+
+
+            </script>
+            
+      </body>
+</html>

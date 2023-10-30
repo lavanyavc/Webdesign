@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Set date</title>
+      </head>
+      <body>
+            <p id="result"></p>
+            <script>
+                  // var a = new Date();
+                  // a.setFullYear(2023);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setFullYear(2023, 11, 25);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setMonth(09);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setDate(05);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setHours(22);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setMinutes(45);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setSeconds(59);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date();
+                  // a.setMilliseconds(999);
+                  // document.getElementById("result").innerHTML=a;
+
+                  // var a = new Date ();
+                  // a.setDate(a.setDate()+30);
+                  // document.getElementById("result").innerHTML=a;
+
+                  let text = " ";
+                  let a = new Date ();
+                  let b = new Date ();
+                  a.setFullYear(2022,10,24);
+                  b.setFullYear(2022,11,25);
+
+                  if (a>b) {
+                  text = "today is before oct 17th 2022";  
+                   } else {
+                        text = "today is after oct 17th 2022";
+                   }
+
+                   document.getElementById("result").innerHTML=text;
+
+
+            </script>
+      </body>
+</html>
