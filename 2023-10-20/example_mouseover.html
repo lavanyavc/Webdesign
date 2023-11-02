@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Mouseover & Mouseout Events</title>
+      </head>
+      <body>
+            <img id="image" src="imgs/img up.png" onmouseover="setnewImage()" onmouseout="setoldImage()" width="350px" height="300px">
+            <script>
+                  function setnewImage() {
+                        document.getElementById("image").src="./imgs/img up.png";
+                  }
+                  function setoldImage() {
+                        document.getElementById("image").src="./imgs/img down.jpeg";
+                  }
+            </script>
+      </body>
+</html>

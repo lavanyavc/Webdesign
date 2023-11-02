@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Form Validation</title>
+      </head>
+      <body>
+            <!-- <form name="myform" method="post" action="success.html" onsubmit="return validpassword()">
+                  password:<input type="password" name="pass1"><br><br>
+                  cpassword:<input type="cpassword"name="pass2"><br>
+                  <input type="submit" value="check">
+            </form>
+            <script>
+                  function validpassword() {
+                        var password = document.myform.pass1.value;
+                        var cpassword = document.myform.pass2.value;
+
+                        if (password.length<6) {
+                              alert("password muct be 6 characters");
+                              return false;
+                        }
+                        if (password==cpassword) {
+                              return true;
+                        } else {
+                              alert("password and confirm password should be same");
+                              return false;
+                        }
+                  }
+            </script> -->
+
+            <!-- <form name="myform"method="post" action="success.html" onsubmit="return validname()">
+            First Name:<input type="text" name="name"><br><br>
+            <input type="submit" value="Submit">
+            </form>
+            <script>
+                  function validname() {
+                        let fname = document.myform.name.value;
+                        if (fname==null || fname=="") {
+                              alert("please enter your name");
+                              return true;
+                        }
+                  }
+            </script> -->
+            <center>
+                  <form name="myform" method="post" action="success.html" onsubmit="return validemail()">
+                        Enter your Mail ID:<input type="text" name="email1"><br><br>
+                        <input type="button" value="Submit">
+                  </form>
+            </center>
+            <script> 
+            function validemail() {
+                  let email2=document.myform.email1.value;
+                  let atpostion=email2.indexof("@");
+                  let dotposition=email2.lastindexof(".");
+                   if (atpostion<1 || dotposition<atpostion+2 || dotposition+2>=email2.length) {
+                        alert ("please enter valid mail-id");
+                        return false;
+                   }
+
+
+            }
+            </script>
+           
+      </body>
+</html>
