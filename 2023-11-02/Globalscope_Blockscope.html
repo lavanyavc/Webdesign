@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Global Scope & Block Scope</title>
+      </head>
+      <body>
+            <p id="demo">
+                  <button onclick="displaytime()">Click here to check time</button>
+            </p>
+            <script>
+                  function displaytime() {
+                        document.getElementById("demo").innerHTML=new Date();
+                  }
+                 
+
+                  // if(1==1){
+                  //       var a="Hello";
+                  //       var a="Welcome";
+                  // }
+                  // console.log(a);
+
+                  // if(1==1){
+                  //       let a="Hello";
+                  //       console.log(a);
+                  // }
+
+                  // if(1==1){
+                  //       const a="Hello";
+                  //       console.log(a);
+                  // }
+
+                  // Arrow Function
+                  // let addFunction=(x,y)=>x+y;
+                  // document.getElementById("demo").innerHTML=addFunction(10,20);
+
+                  // let x="Welcome World";
+                  // function myFunction() {
+                  //       return x;
+                  // }
+                  // document.getElementById("demo").innerHTML=x;
+
+                  // let hello=" ";
+                  // hello = () => "Happy World";
+                  // document.getElementById("demo").innerHTML=hello();
+
+                  // let welcome = (name) => {
+                  //       return   `welcome ${name}`;
+                  // }
+                  // document.getElementById("demo").innerHTML=welcome("world");
+
+                  // let word = (name,age) => {
+                  //       return `word${name} ${age}`;
+                  // }
+                  // document.getElementById("demo").innerHTML=word ("Advith",1);
+
+                  // Template string;
+                  // let x="Advith";
+                  // let y="Kishan";
+                  // let z=`${x} is son of ${y}`;
+                  // document.getElementById("demo").innerHTML=z;
+
+                  // let price=100;
+                  // let gst=0.05;
+                  // let amount=`${(price+(price*gst))}`;
+                  // document.getElementById("demo").innerHTML=amount;
+
+                  // document.getElementById("demo").innerHTML="Screen width is " + screen.width;
+                  // document.getElementById("demo").innerHTML="Screen heigth is " + screen.height;
+                  // document.getElementById("demo").innerHTML="Screen availHeight is " + screen.availHeight;
+
+
+               
+            </script>
+      </body>
+</html>
