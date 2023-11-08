@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>SMOKE EFFECT</title>
+      <style>
+            body {
+                  background-color: rgb(19, 18, 18);
+                  padding: 200px 0;
+                  border: 3px solid green;
+                  text-align: center;
+            }
+
+            p {
+                  color: rgb(170, 169, 169);
+                  font-size: 60px;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                  top: 50%;
+                  animation: animate;
+
+            }
+
+            @keyframes animate {
+                  0% {
+                        opacity: 0%;
+                        transform: rotateY(90deg);
+                        filter: blur(10px);
+                  }
+
+                  100% {
+                        opacity: 1;
+                        transform: rotateY(0deg);
+                        filter: blur(0px);
+                  }
+            }
+      </style>
+      <!-- <style ="./style.css" type="stylesheet"></style> -->
+</head>
+
+<body>
+      <p>ADVITH KISHAN</p>
+</body>
+
+</html>
