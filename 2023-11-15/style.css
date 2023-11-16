@@ -1,0 +1,25 @@
+#box1,
+#box2 {
+      background-color: rgb(148, 129, 167);
+      border: 2px solid;
+      text-align: justify;
+      width: 400px;
+      padding: 2px;
+}
+
+h3 {
+      color: rgb(255, 248, 240);
+      font-style: italic;
+}
+
+img {
+      width: 200px;
+      height: 200px;
+      align-content: center;
+}
+
+p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      color: black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Jquerry</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      </link>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("h3").click(function () {
+                        $("h3").hide();
+                  })
+            })
+            $(document).ready(function () {
+                  $("#box1,#box2").mouseenter(function () {
+                        $(this).css("background-color", "green")
+                  })
+            })
+            $(document).ready(function () {
+                  $("img").dblclick(function () {
+                        $("img").css("width", 300, "height,300")
+                  })
+            })
+      </script>
+</head>
+
+<body>
+      <div id="box1">
+            <h3>ROSE</h3>
+            <p>According to the Guinness Book of World Records, roses are the oldest species of plant to be
+                  grown as decoration. The rose (genus Rosa, family Rosaceae) is the oldest species of plant
+                  cultivated and used for decorative purposes</p>
+            <img src="./pics/Rose.jpg">
+      </div>
+      <div id="box2">
+            <h3>SUNFLOWER</h3>
+            <p>Sunflowers plants display a behavior called heliotropism. The flower buds and young blossoms will
+                  face east in the morning and follow the sun as the earth moves during the day. 6.
+                  THE WORLD'S TALLESTSUNFLOWER REACHES 30 FEET AND 1 INCH </p>
+            <img src="./pics/sunflower.jpg">
+      </div>
+</body>
+
+
+</html>

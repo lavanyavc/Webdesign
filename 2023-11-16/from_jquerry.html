@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Form events using Jquerry</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("#fname,#lname").mouseenter(function () {
+                        $(this).css("background-color", "grey")
+                  });
+                  $("#fname,#lname").mouseleave(function () {
+                        $(this).css("background-color", "blue")
+                  });
+                  $("#fname,#lname").click(function () {
+                        $(this).css("background-color", "green")
+                  });
+                  $("#proof").hover(function () {
+                        alert("Select minimum 2!");
+                  });
+                  $("#age").focus(function () {
+                        $(this).css("background-color", "yellow")
+                  })
+                  $("button").click(function () {
+                        alert("Form has been submitted successfully")
+                  });
+            });
+      </script>
+</head>
+
+<body>
+      <div id="demo">
+            <h2>Sign Up</h2>
+            <form>
+                  <label for="fname">First Name:</label>
+                  <input type="text" id="fname" name="fname"><br><br>
+                  <label for="lname">Last Name:</label>
+                  <input type="text" id="lname" name="lname"><br><br>
+                  <label for="age">Age:</label>
+                  <input type="text" id="age" name="age"><br><br>
+                  <label for="income">Income:</label>
+                  <input type="text" id="income" name="income"><br><br>
+                  <label for="gender">Gender:</label>
+                  <input type="radio" id="gender" name="gender" value="male">Male
+                  <input type="radio" id="gender" name="gender" value="female">Female
+                  <input type="radio" id="gender" name="gender" value="trans">Trans<br><br>
+                  <label for="proof">ID Proof:</label>
+                  <input type="checkbox" id="proof" value="idcard">Voter ID
+                  <input type="checkbox" id="proof" value="aadhar">Aadhar
+                  <input type="checkbox" id="proof" value="dl">DL
+                  <input type="checkbox" id="proof" value="passport">Passport<br><br>
+                  <label for="nationality">Nationality</label>
+                  <select id="nationality">
+                        <option value=" ">Select</option>
+                        <option value="ind">India</option>
+                        <option value="usa">USA</option>
+                        <option value="aus">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="ger">Germany</option>
+                        <option value="uk">France</option>
+                  </select><br><br>
+                  <button value="submit">Submit</button><br><br>
+
+            </form>
+      </div>
+</body>
+
+</html>

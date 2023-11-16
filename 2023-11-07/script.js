@@ -1,26 +1,4 @@
-// class Person {
-//       constructor(name, phone) {
-//             this.name = name;
-//             this.mobile_no = phone
-//       }
 
-//       getPersonDetails() {
-//             console.log("name", this.name, "\n mobile:", this.mobile_no);
-//       }
-// }
-
-// class Employee extends Person {
-//       constructor(n, m, s, c) {
-//             super(name, c);
-//             this.salary = s;
-//             this.company = c;
-//       }
-//       getOfficeDetails() {
-//             console.log("salary", this.salary, "\n mobile:", this.company);
-//       }
-// }
-// p1 = new Person("Kavitha", 7894125472);
-// p2 = new Person("Pooja", 9876542120);
 
 // class Person {
 //       constructor(name, place) {
@@ -60,27 +38,133 @@
 //       document.getElementById("demo").innerHTML = Car1.getCarDetails();
 // }
 
-class Car {
-      constructor(name, company, mileage, year) {
-            this.setCarDetails(name, company, mileage, year);
+// class Car {
+//       constructor(name, company, mileage, year) {
+//             this.setCarDetails(name, company, mileage, year);
+//       }
+
+//       getCarDetails() {
+//             return (this.name + " " + this.company + " " + this.mileage + " " + this.year);
+//       }
+
+//       setCarDetails(name, company, mileage, year) {
+//             this.name = name;
+//             this.company = company;
+//             this.mileage = mileage;
+//             this.year = year;
+//       }
+// }
+
+// function displayFunction() {
+//       const Car1 = new Car("Polo", "Volkswagen", "20kmpl", 2019);
+//       const Car2 = new Car("Celerio", "Maruthi", "15kmpl", 2020);
+//       document.getElementById("demo").innerHTML = Car1.getCarDetails();
+//       document.getElementById("demo").innerHTML = Car2.getCarDetails();
+//       Car1.
+// }
+
+
+// class Car {
+//       constructor(brand) {
+//             this.carname = brand;
+//       }
+//       present() {
+//             return 'I have a ' + this.carname;
+//       }
+// }
+
+// class Model extends Car {
+//       constructor(brand, mod) {
+//             super(brand);
+//             this.model = mod;
+//       }
+//       show() {
+//             return this.present() + ', it is a ' + this.model;
+//       }
+// }
+// function displayFunction() {
+//       const myCar = new Model("Ford", "Mustang");
+//       document.getElementById("demo").innerHTML = myCar.show();
+// }
+
+// class Bike {
+//       constructor(company) {
+//             this.company = company;
+//       }
+//       companyDetails() {
+//             return ("I have a" + " " + this.company);
+//       }
+// }
+
+// class Model extends Bike {
+//       constructor(company, mod) {
+//             super(company);
+//             this.model = mod;
+//       }
+//       modelDetails() {
+//             return (this.companyDetails() + " " + this.model);
+//       }
+// }
+
+// function displayFunction() {
+//       const myBike = new Model("Yamaha", "R15");
+//       document.getElementById("demo").innerHTML = myBike.modelDetails();
+// }
+class GrandParent {
+      constructor(grandFatherName, grandMotherName) {
+            this.setGrandFatherName(grandFatherName);
+            this.setGrandMotherName(grandMotherName);
+      }
+      showGrandFatherName() {
+            return (this.grandFatherName);
+      }
+      setGrandFatherName(name) {
+            this.grandFatherName = name;
+      }
+      showGrandMotherName() {
+            return (this.grandMotherName);
+      }
+      setGrandMotherName(name) {
+            this.grandMotherName = name;
+      }
+}
+class Parent extends GrandParent {
+      constructor(fatherName, motherName, grandFatherName, grandMotherName) {
+            super(grandFatherName, grandMotherName)
+            this.setFatherName(fatherName);
+            this.setMotherName(motherName);
+      }
+      showFatherName() {
+            return (this.fatherName);
+      }
+      setFatherName(name) {
+            this.fatherName = name;
+      }
+      showMotherName() {
+            return (this.motherName);
+      }
+      setMotherName(name) {
+            this.motherName = name;
       }
 
-      getCarDetails() {
-            return (this.name + " " + this.company + " " + this.mileage + " " + this.year);
-      }
+}
 
-      setCarDetails(name, company, mileage, year) {
+class Child extends Parent {
+      constructor(name, fatherName, motherName, grandFatherName, grandMotherName) {
+            super(fatherName, motherName, grandFatherName, grandMotherName)
+            this.setName(name);
+      }
+      showName() {
+            return (this.name);
+      }
+      setName(name) {
             this.name = name;
-            this.company = company;
-            this.mileage = mileage;
-            this.year = year;
       }
 }
-
 function displayFunction() {
-      const Car1 = new Car("Polo", "Volkswagen", "20kmpl", 2019);
-      const Car2 = new Car("Celerio", "Maruthi", "15kmpl", 2020);
-      document.getElementById("demo").innerHTML = Car1.getCarDetails();
-      document.getElementById("demo").innerHTML = Car2.getCarDetails();
-      Car1.
+      const child = new Child("Advith", "Kishan", "Lavanya", "Ravindra", "Adithi");
+      document.getElementById("demo").innerHTML = child.showGrandFatherName();
 }
+
+
+
