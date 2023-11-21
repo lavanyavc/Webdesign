@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>CSS Classes in Jquery</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("#demo1 button").click(function () {
+                        $("h1").addClass("red");
+                  })
+                  $("#demo2 button").click(function () {
+                        $("h2").removeClass("green");
+                  })
+                  $("#demo3 button").click(function () {
+                        $("h3").toggleClass("blue");
+                  })
+
+            })
+
+      </script>
+
+</head>
+
+<body>
+      <div id="demo1">
+            <h1 class="red">If you are going to hell,keep going-Winston Churchill</h1>
+            <button>Add Class</button>
+      </div><br>
+      <div id="demo2">
+            <h2 class="green">If you want something done right, do it yourself-Charles-GuillaumeÉtienne</h2><br>
+            <button>Remove Class</button>
+      </div><br>
+      <div id="demo3">
+            <h3 class="blue">You must be the change you wish to see in the world-Margaret Thatcher </h3>
+            <button>Toggle Class</button>
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+h3 {
+      font-family: 'Times New Roman', serif;
+      color: red;
+}
+
+#box1 {
+      width: 400px;
+      border: 2px solid;
+      background-color: rgb(198, 185, 210);
+}
+
+#box2 {
+      border: 2px solid;
+      width: 400px;
+      background-color: rgb(157, 191, 164);
+}

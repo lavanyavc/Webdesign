@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Events in Jquerry</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("button").click(function () {
+                        $("ul li:first-child").hide()
+                  })
+                  $("p").mouseenter(function () {
+                        $(this).css("color", "red")
+                  })
+                  $("#tif").mouseenter(function () {
+                        $("#beverages ul li").hide()
+                  })
+                  $("#tif").mouseleave(function () {
+                        $("#beverages ul li").show()
+                  })
+                  $("#beverages").mouseenter(function () {
+                        $("#tif ul li").hide()
+                  })
+                  $("#beverages").mouseleave(function () {
+                        $("#tif ul li").show()
+                  })
+            })
+      </script>
+
+</head>
+
+<body>
+      <div id="tif">
+            <p>Tiffen Menu</p>
+            <ul>
+                  <li>Dosa</li>
+                  <li>Idli</li>
+                  <li>Upma</li>
+                  <li>Poha</li>
+                  <li>Poori</li>
+            </ul>
+      </div>
+      <div id="beverages">
+            <p>Beverages Menu</p>
+            <ul>
+                  <li>Tea</li>
+                  <li>Coffee</li>
+                  <li>Milk</li>
+                  <li>Boost</li>
+                  <li>Horlicks</li>
+                  <li>Juice</li>
+            </ul>
+      </div>
+      <button>Click</button>
+
+</body>
+
+</html>

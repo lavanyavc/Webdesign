@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Table</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("th").mouseenter(function () {
+                        $(this).css("color", "red")
+                  })
+                  $("th").mouseenter(function () {
+                        $(this).css("background-color", "yellow")
+                  })
+                  $("td").click(function () {
+                        $(this).css("background-color", "grey")
+                  })
+                  $("td").mouseleave(function () {
+                        $(this).css("background-color", "white")
+                  })
+
+            })
+      </script>
+</head>
+
+<body>
+
+      <table>
+            <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+            </tr>
+            <tr>
+                  <td>TCS</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+            </tr>
+            <tr>
+                  <td> Wipro</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+            </tr>
+            <tr>
+                  <td>L&T</td>
+                  <td>Roland Mendel</td>
+                  <td>UK</td>
+            </tr>
+            <tr>
+                  <td>Oracle</td>
+                  <td>Helen Bennett</td>
+                  <td>Canada</td>
+            </tr>
+            <tr>
+                  <td>Google</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>USA</td>
+            </tr>
+            <tr>
+                  <td> Facebook</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>Italy</td>
+            </tr>
+
+      </table>
+</body>
+
+</html>

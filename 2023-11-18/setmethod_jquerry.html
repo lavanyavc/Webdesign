@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Set method in jquery</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            // $(document).ready(function () {
+            //       $("#box1 h3").click(function () {
+            //             $(this).text("Welcome");
+            //       })
+            //       $(document).ready(function () {
+            //             $("#box2").mouseenter(function () {
+            //                   $(this).html("<br>Helo World!</br>");
+            //             })
+            //       })
+            // })
+            $(document).ready(function () {
+                  $("#but1").click(function () {
+                        $("p").html("Welcome");
+                  })
+                  $("#but2").click(function () {
+                        $("h4").text("Motherhood");
+                        $("h4").css({ "color": "red" });
+
+                  })
+                  $("#but3").click(function () {
+                        $("input").val("Advith Kishan");
+                  })
+            })
+            // $(document).ready(function () {
+            //       $("button").click(function () {
+            //             $("img").attr("width", "600px");
+            //       })
+            // })
+
+
+      </script>
+
+</head>
+
+<body>
+      <!-- <div id="box1">
+            <h3>How can I define Chilhood?</h3>
+            <p>Childhood, period of the human lifespan between infancy and adolescence, extending from ages 1–2 to
+                  12–13.</p>
+      </div>
+      <br>
+      <div id="box2">
+            <h3 style="color:rgb(136, 0, 255)">How can I enjoy my childhood?</h3>
+            <ol>
+                  <li>Visit a park with a play area and let your inner child run wild. </li>
+                  <li>Dig out your comic book collection and dive into a world of fantasy.</li>
+                  <li>Take to the road on a bicycle</li>
+                  <li>Let yourself loose with trampolines</li>
+                  <li>Experiment with craft techniques.</li>
+            </ol>
+      </div> -->
+      <div id="test">
+            <p>Hello</p>
+            <h4>World</h4>
+            Name:<input type="text"><br><br>
+            <button id="but1">HTML Button</button>
+            <button id="but2">Text Button</button>
+            <button id="but3">Value Button</button>
+      </div>
+      <!-- <div id="demo">
+            <img src="./imgs/butterfly 1.jpg" width="400px"><br><br>
+            <button>Click here</button>
+      </div> -->
+
+</body>
+
+</html>
