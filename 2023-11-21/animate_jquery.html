@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Jquery Animation</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("#demo1 button").click(function () {
+                        $("#demo1 img").animate({
+                              left: "100px",
+                              width: "250px",
+                              height: "500px",
+                        })
+
+                  })
+            })
+            $(document).ready(function () {
+                  $("#demo2 button").click(function () {
+                        $("p").animate({
+                              left: "270px",
+                              width: "250px",
+                              height: "250px",
+                              padding: "15px",
+                              opacity: "1",
+                              fontSize: "30px",
+                              top: "200px",
+                        });
+                  });
+            });
+            $(document).ready(function () {
+                  $("#demo3 button").click(function () {
+                        $("#demo3 img").animate({
+                              left: "300px",
+                              width: "100px",
+                              height: "100px",
+                              top: "450px",
+                        })
+                  })
+            })
+
+      </script>
+</head>
+
+<body>
+      <div id="demo1">
+            <button>Display Boy</button><br><br>
+            <img src="./img/boy2.jpg" style="width:15px; height:30px; position:absolute;">
+      </div><br><br>
+      <div id="demo2">
+            <button>Name</button><br>
+            <p style="width: 50px; height: 50px; position: absolute; opacity: 0.1;">
+                  Advith Kishan</p><br><br>
+      </div><br><br>
+      <div id="demo3">
+            <button>Click</button><br><br>
+            <img src="./img/ball.png" style="width:10px; height: 10px; position: absolute;">
+      </div>
+
+</body>
+
+</html>

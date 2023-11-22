@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Example for slideUp & slideDown</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("#btn1 button").click(function () {
+                        $("#image img").slideUp(5000);
+                  })
+                  $("#btn2 button").click(function () {
+                        $("#image img").slideDown(5000);
+                  })
+                  $("#btn3 button").mouseover(function () {
+                        $("#image img").stop();
+                  })
+            })
+      </script>
+      <style>
+            img {
+                  display: block;
+                  left: auto;
+                  right: auto;
+            }
+      </style>
+</head>
+
+<body>
+      <div id="btn1">
+            <button>Slide Up</button><br><br>
+      </div>
+      <div id="image">
+            <img src="./img/img1.avif" style="width: 50%;"><br><br>
+      </div>
+      <div id="btn2">
+            <button>Slide Down</button><br><br>
+      </div>
+      <div id="btn3">
+            <button>Stop</button>
+      </div>
+
+</body>
+
+</html>

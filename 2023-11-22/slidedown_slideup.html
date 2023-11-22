@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Slide down & Slide up animation</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $("#demo1").click(function () {
+                        $("#demo2").slideDown(5000);
+
+                  })
+            })
+            $(document).ready(function () {
+                  $("button").click(function () {
+                        $("#demo2").stop();
+                  })
+            })
+      </script>
+      <style>
+            #demo1,
+            #demo2 {
+                  background-color: cadetblue;
+                  height: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-style: italic;
+                  text-align: center;
+                  padding: 20px;
+                  border: 2px solid black;
+                  font-size: 30px;
+
+            }
+
+            #demo2 {
+                  height: 250px;
+                  display: none;
+                  top: 40px;
+
+            }
+      </style>
+
+</head>
+
+<body>
+      <div id="demo1">Click here</div><br><br>
+      <div id="demo2">Hello,Welcome to the world!</div><br>
+      <button>Stop</button>
+
+
+</body>
+
+</html>

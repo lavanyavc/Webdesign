@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Fade In & Fade Out Animation in Jquery</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            // $(document).ready(function () {
+            //       $("#btn button").click(function () {
+            //             $("#img1 img").fadeOut();
+            //             $("#img2 img").fadeOut("slow");
+            //             $("#img3 img").fadeOut(1000);
+            //             $("#img4 img").fadeOut(2000);
+            //       })
+            // })
+            $(document).ready(function () {
+                  $("#btn button").click(function () {
+                        $("#box1").fadeIn();
+                        $("#box2").fadeIn("slow");
+                        $("#box3").fadeIn(3000);
+
+                  })
+            })
+      </script>
+</head>
+
+<body>
+      <!-- <div id="btn">
+            <button>Click here to fadeOut</button>
+      </div>
+      <div id="img1">
+            <img src="./img/apple.png" style="width: 150px; height: 150px; opacity:0.1;">
+      </div>
+      <div id="img2">
+            <img src="./img/apple.png" style="width: 150px; height: 150px; opacity: 0.4;">
+      </div>
+      <div id="img3">
+            <img src="./img/apple.png" style="width: 150px; height: 150px; opacity: 0.7;">
+      </div>
+      <div id="img4">
+            <img src="./img/apple.png" style="width: 150px; height: 150px; opacity: 1;">
+      </div> -->
+      <div id="btn">
+            <button>Click here to fadeIn</button>
+      </div><br><br>
+      <div id="box1" style="background-color: chocolate; width: 150px; height: 150px; display:none;"></div>
+      <div id="box2" style="background-color: rgb(255, 255, 255); width: 150px; height: 150px;display:none;"></div>
+      <div id="box3" style="background-color: rgb(18, 176, 0); width: 150px; height: 150px;display:none;    "></div>
+
+
+
+</body>
+
+</html>
