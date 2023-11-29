@@ -1,0 +1,12 @@
+.img-thumbnail {
+      /* width: 299px;
+      height: 168px; */
+      width: 450px;
+      height: 250px;
+      align-items: center;
+}
+
+h1,
+p {
+      text-align: center;
+}

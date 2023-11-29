@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Employment Form</title>
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="./script.js" type="text/javascript"></script>
+</head>
+
+<body>
+      <h2>EMPLOYMENT APPLICATION</h2>
+      <form action="#" onsubmit="return validSubmit()">
+            <div>
+                  <label for="fname">First Name:</label>
+                  <input type="text" id="fname" name="fname" onsubmit="validName()"><br>
+                  <span id="name-error"></span><br><br>
+            </div>
+            <div>
+                  <label for="dob">DOB:</label>
+                  <input type="number" id="dob" placeholder="DD/MM/YY" onsubmit="validDame()"><br>
+                  <span id="bob-error"></span><br><br>
+            </div>
+            <div>
+                  <label for="email">Mail-Id:</label>
+                  <input type="email" id="email" onsubmit="validEmail()"><br>
+                  <span id="email-error"></span><br><br>
+            </div>
+
+            <label for="number">Mobile Number:</label>
+            <input type="number" id="number"><br><br>
+
+            <label>Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="t-gender">Transgender</label>
+            <input type="radio" id="t-gender" name="gender" value="t-gender"><br><br>
+
+            <label for="qualifiaction">Qualification:</label>
+            <select id="qualifiaction">
+                  <option value="">Select </option>
+                  <option value="be">B.E</option>
+                  <option value="dip">Diploma</option>
+                  <option value="mtech">M.Tech</option>
+                  <option value="puc">PUC</option>
+                  <option value="sslc">SSLC</option>
+            </select><br><br>
+
+            <label for="designation">Designation:</label>
+            <select id="designation">
+                  <option value="">Select Position</option>
+                  <option value="JE">Junior Engineer</option>
+                  <option value="SE">Senior Engineer</option>
+                  <option value="AM">Assistent Manager</option>
+                  <option value="DM">Deputy Manager</option>
+                  <option value="Supervisor">Supervisor</option>
+                  <option value="trainee">Trainee</option>
+            </select><br><br>
+
+            <label for="c_adress">Current adress:</label>
+            <input type="text" id="c_adress"><br><br>
+
+            <label for="p_adress">Permanent adress:</label>
+            <input type="text" id="p_adress"><br><br>
+
+            <div id="btn">
+                  <button>Submit</button>
+            </div>
+      </form>
+</body>
+
+</html>
