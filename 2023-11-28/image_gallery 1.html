@@ -4,7 +4,7 @@
 <head>
       <title>Image Gallery in Bootstrap</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width" , initial scale="1">
+      <meta name="viewport" content="width=device-width" , initial scale="1" ,shrink-to-fit="no">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="style.css">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
@@ -15,6 +15,16 @@
                   width: 450px;
                   height: 250px;
                   align-items: center;
+            }
+
+            img {
+                  transition: width 1s, height 1s, transform 2s;
+            }
+
+            img:hover {
+                  width: 550px;
+                  height: 350px;
+                  transform: rotate(180deg);
             }
 
             h1,
