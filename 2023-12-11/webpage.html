@@ -6,58 +6,15 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width" , initial-scale="1">
             <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="./assets/styel.css">
+            <link rel="stylesheet" type="text/css" href="./assets/style.css">
             <link rel="stylesheet" type="text/css" href="./assets/fontawesome-free/css/all.min.css">
             <!-- <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-            <style>
-                  .flip-card {
-                        background-color: transparent;
-                        width: 100%;
-                        height: 15rem;
-                        perspective: 1000px;
-                  }
-
-                  .flip-card-inner {
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-                        text-align: center;
-                        transition: transform 0.6s;
-                        transform-style: preserve-3d;
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                  }
-
-                  .flip-card:hover .flip-card-inner {
-                        transform: rotateY(180deg);
-                  }
-
-                  .flip-card-front,
-                  .flip-card-back {
-                        position: absolute;
-                        width: 100%;
-                        height: 15rem;
-                        -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden;
-                        background-color: #2980b9;
-                  }
-
-                  .flip-card-front {
-                        color: white;
-                  }
-
-                  .flip-card-back {
-                        /* width: 100%;
-                        height: 16rem; */
-                        /* background-color: pink;
-                        color: rgb(21, 20, 20); */
-                        transform: rotateY(180deg);
-                  }
-            </style>
 
       </head>
 
-      <body>
+      <body style="background-color: rgb(255, 255, 255);">
+            <!-- navigation bar -->
             <div class="container"
                   style="background-image:url(./assets/images/img1.jpg); background-repeat: no-repeat;height: 280px; width: 100%;">
                   <div id="demo">
@@ -94,6 +51,7 @@
                         <button class="btn btn-primary" type="button">Read more</button>
                   </div>
             </div>
+            <!-- end navigation bar  -->
             <div class="container-fluid  mt-2">
                   <div class="row">
                         <div style=" text-align: center;">
@@ -103,9 +61,9 @@
                               </p>
                         </div>
                   </div>
+                  <!-- gallery-- -->
                   <div class="container">
                         <div class="row mt-2">
-                              <!-- <div class="row"> -->
                               <!--1st image-->
                               <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                                     <div class="card" style="width: 100%">
@@ -208,7 +166,7 @@
                               <!--7th image-->
                               <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                                     <div class="card" style="width: 100%">
-                                          <img src="./assets/images/jermany.jpg" class="card-img-top"
+                                          <img src="./assets/images/germany.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="germany" />
                                           <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
@@ -245,7 +203,7 @@
                         </div>
                   </div>
             </div>
-            <!--end gallery-->
+            <!-- browse ur activity -->
             <div class="container-fluid mt-3 ">
                   <div class="row ">
                         <div class="col-md-8">
@@ -303,6 +261,7 @@
                         </div>
                   </div>
             </div>
+            <!-- discount img -->
             <div class="container mt-2">
                   <div class="card img-fluid" style="width:100%">
                         <img class="card-img-top" src="./assets/images/beach.jpg" alt="Card image" style="width:100%">
@@ -314,92 +273,94 @@
                         </div>
                   </div>
             </div>
+            <!-- types of travels -->
             <div class="container mt-2">
-                  <div class=" row">
-                        <div class="flip-card">
-                              <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                          <h4 class="card-title text-center mt-3"> <i class='fas fa-globe'
-                                                      style="color: black;"></i>
-                                                Passionate Travel </h4>
-                                          <p class="card-text mt-2" style="text-align: justify;">“Once the travel
-                                                bug bites there is no known antidote, and I know that I
-                                                shall be happily infected until the end of my life.”― Michael
-                                                Palin</p>
-                                    </div>
-                                    <div class="flip-card-back">
-                                          <img src="./assets/images/passionate travel.jpg"
-                                                style="width: 100%; height: 15rem;">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="row mt-2">
-                              <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                          <div class="flip-card-front">
-                                                <h4 class="card-title text-center mt-3"><i class='fas fa-map-marked-alt'
-                                                            style="color: black;"></i>
-                                                      Beautifull Places</h4>
-                                                <p class="card-text mt-2" style="text-align: justify;">There is so
-                                                      much in this world that you have yet to explore.Beautifull
-                                                      places are almost alive!When you visit them,you can feel
-                                                      their breath.</p>
-                                          </div>
-                                          <div class="flip-card-back">
-                                                <img src="./assets/images/beautifull place.jpg"
-                                                      style="width: 100%; height: 15rem;">
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="row mt-2">
-                              <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                          <div class="flip-card-front">
-                                                <h4 class="card-title text-center mt-3"><img
-                                                            src="./assets/images/adventure icon.png"
-                                                            style="width: 30px; height: 35px;">
-                                                      Adventure Travel</h4>
-                                                <p class="card-text mt-2" style="text-align: justify;">Adventure
-                                                      travel’s one of the most popular travel types you’ll come
-                                                      across.The goal is simple: push yourself to do new, exciting, and
-                                                      heart-thumping things in beautiful parts of the world..</p>
+                  <div class="flip-box">
+                        <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                    <h4 class="card-title text-center mt-3"> <i class='fas fa-globe'
+                                                style="color: black;"></i>
+                                          Passionate Travel </h4>
+                                    <p class="card-text mt-2" style="text-align: justify;">.Your travels will make your
+                                          daily life less boring. Your travel memories
+                                          will remain, and everyday you will think about how the last trip had an impact
+                                          on you. You won't feel the urge to spend your next holidays in fancy hotels,
+                                          but you will focus on the more important things while traveling.“Once the
+                                          travel bug bites there is no known antidote, and I know that I
+                                          shall be happily infected until the end of my life.”― Michael
+                                          Palin</p>
 
-                                          </div>
-                                          <div class="flip-card-back">
-                                                <img src="./assets/images/adventure travel.jpg"
-                                                      style="width: 100%; height: 15rem;">
-                                          </div>
-                                    </div>
                               </div>
-                              <div class="row mt-2">
-                                    <div class="flip-card">
-                                          <div class="flip-card-inner">
-                                                <div class="flip-card-front">
-                                                      <h4 class="card-title text-center mt-3"><img
-                                                                  src="./assets/images/solo travel icon.jpg"
-                                                                  style="width: 30px; height: 35px;">
-                                                            Solo Travel</h4>
-                                                      <p class="card-text mt-2" style="text-align: justify;">Solo travel
-                                                            is a travel type where an individual explores a new
-                                                            destination
-                                                            independently without the companionship of friends or
-                                                            family. Travel types Family.Solo traveling will help you
-                                                            reconnect
-                                                            with yourself and find your purpose.</p>
-                                                </div>
-                                                <div class="flip-card-back">
-                                                      <img src="./assets/images/solo travel.jpg"
-                                                            style="width: 100%; height: 15rem;">
-                                                </div>
-                                          </div>
-                                    </div>
+                              <div class="flip-box-back">
+                                    <img src="./assets/images/passionate travel.jpg"
+                                          style="width: 100%; height: 250px;">
                               </div>
                         </div>
                   </div>
+                  <div class="flip-box mt-1">
+                        <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                    <h4 class="card-title text-center mt-3"><i class='fas fa-map-marked-alt'
+                                                style="color: black;"></i>
+                                          Beautifull Places</h4>
+                                    <p class="card-text mt-2" style="text-align: justify;">There is so
+                                          much in this world that you have yet to explore.Beautifull
+                                          places are almost alive!When you visit them,you can feel
+                                          their breath.There is no greater beauty or charm than what we can find in
+                                          nature.Find a beautiful place and get lost.The planet is a vast and beautiful
+                                          place,full of exciting and wonderfull people. </p>
+                              </div>
+                              <div class="flip-box-back">
+                                    <img src="./assets/images/beautiful places.webp"
+                                          style="width: 100%; height: 250px;">
+                              </div>
+                        </div>
+                  </div>
+                  <div class="flip-box mt-1">
+                        <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                    <h4 class="card-title text-center mt-3"><img
+                                                src="./assets/images/adventure icon.png"
+                                                style="width: 30px; height: 35px;">
+                                          Adventure Travel</h4>
+                                    <p class="card-text mt-2 " style="text-align: justify;">Adventure
+                                          travel’s one of the most popular travel types you’ll come
+                                          across.The goal is simple: push yourself to do new, exciting, and
+                                          heart-thumping things in beautiful parts of the world..Adventure is an
+                                          essential part of life. It allows us to step out of our comfort zones, explore
+                                          new places, and experience new things.</p>
+                              </div>
+                              <div class="flip-box-back">
+                                    <img src="./assets/images/adventure travel.jpg" style="width: 100%; height: 250px;">
+                              </div>
+                        </div>
+                  </div>
+                  <div class="flip-box mt-1">
+                        <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                    <h4 class="card-title text-center mt-3"><img
+                                                src="./assets/images/solo travel icon.jpg"
+                                                style="width: 30px; height: 35px;">
+                                          Solo Travel</h4>
+                                    <p class="card-text mt-2" style="text-align: justify;">Solo travel
+                                          is a travel type where an individual explores a new
+                                          destination independently without the companionship of friends or
+                                          family.Solo traveling gives you the chance to take a break from the
+                                          distractions of daily life and spend some quality time with yourself.</p>
+                              </div>
+
+                              <div class="flip-box-back">
+                                    <img src="./assets/images/solo travel.jpg" style="width: 100%; height: 250px;">
+                              </div>
+                        </div>
+                  </div>
+
+
+
             </div>
+
             <!--footer-->
-            <div class=" container-fluid mt-4">
+            <div class=" container mt-3">
                   <div class="footer">
                         <h3 style="text-align: center; margin-top: 10px;"><i class='fas fa-plane-departure'
                                     style='font-size:20px;'></i> Fly high
@@ -419,14 +380,10 @@
                               </div>
                         </div>
                         <div class="row">
-                              <i style="text-align: center; color: rgb(41, 8, 85);">"Travel makes one
-                                    modest.You see what a tiny place
-                                    you
-                                    occupy in the world"</i>
-
+                              <i style="text-align: center; color: rgb(41, 8, 85); font-size: 15px;">"Travel makes one
+                                    modest.You see what a tiny place you occupy in the world"</i>
                         </div>
                   </div>
-
             </div>
 
 
