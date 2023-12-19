@@ -1,82 +1,192 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Landing Page</title>
-        <style>
-            body {
-                text-align: left;
-                font-family: 'Times New Roman', Times, serif;
-                margin: 10px;
-            }
-            .slide-container {
-                max-width: 100%;
-                position:relative;
-                margin:auto;
-            }
-            .number {
-                padding: 15px;
-                position: absolute;
-                text-align: left;
-                font-size: 15pt;
-                font-family: 'Times New Roman', Times, serif;
-                color: aliceblue;
-            }
-            .text {
-                padding:2px;
-                position: relative;
-                text-align: center;
-                font-size: 20pt;
-                font-family: 'Times New Roman', Times, serif;
-                color: rgb(252, 252, 252);
-                bottom: 65px;
-                font-weight: bold;
-            }
-            .prev,.next {
-                cursor: pointer;
-                position: absolute;
-                top:50%:
-                width:auto;
-                margin-top:-22px;
-                padding: 10px;
-                user-select: none;
-                transition:0.6s ease;
-                border-radius:0 3px 3px 0;
-                font-size: 25pt;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-            }
-            .dot {
-                font-size: 25px;
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive 3D Cards</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        } */
+
+        /* body {
+            background-color: #151320;
+        } */
+
+        section {
+            height: 100vh;
+            display: flex;
+            padding: 0 4em;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container {
+            perspective: 1000px;
+            height: 30vh;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .card {
+            transform-style: preserve-3d;
+            height: 100%;
+            width: 100%;
+            transition: 0.5s ease;
+        }
+
+        .front,
+        .back {
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 0.4em;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            background: linear-gradient(to right, #a246ef, #6523fe);
+        }
+
+        .front img {
+            width: 5em;
+        }
+
+        .content {
+            transform: translateZ(60px);
+        }
+
+        .content h3 {
+            font-size: 22px;
+            margin-top: 1em;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+
+        .content p {
+            font-size: 14px;
+            line-height: 2em;
+            letter-spacing: 0.02em;
+            padding: 0 3em;
+        }
+
+        .back {
+            background-color: #28253a;
+            transform: rotateX(180deg);
+        }
+
+        .container:hover .card {
+            transform: rotateX(180deg);
+        }
+
+        @media screen and (min-width: 992px) {
+            section {
+                padding: 0 1em;
             }
 
+            .container {
+                flex-basis: 0 0 33.33%;
+                max-width: 33.33%;
+                padding: 0 1.5em;
+            }
+        }
+    </style>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <div class="slide-container">
-            <div class="images">
-                <div class="number">1/4</div>
-                <img src="./img/beach.jpg" width="100%">
-                <div class="text">Caption one</div>
+<body>
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="content">
+                        <img src="research-img.png" />
+                        <h3>RESEARCH</h3>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            nam expedita exercitationem?
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="images">    
-                <div class="number">2/4</div>
-                <img src="./img/hill.jpg" width="100%">
-                <div class="text">Caption two</div>
-            </div>
-            <div class="images">    
-                <div class="number">3/4</div>
-                <img src="./img/mountain.jpg" width="100%">
-                <div class="text">Caption three</div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-    </body>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="content">
+                        <img src="design-img.png" />
+                        <h3>DESIGN</h3>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            nam expedita exercitationem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="content">
+                        <img src="develop-img.png" />
+                        <h3>DEVELOP</h3>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            nam expedita exercitationem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="content">
+                        <img src="develop-img.png" />
+                        <h3>DEVELOP</h3>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            nam expedita exercitationem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
 </html>
