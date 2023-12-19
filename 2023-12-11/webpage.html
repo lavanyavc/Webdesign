@@ -10,6 +10,50 @@
             <link rel="stylesheet" type="text/css" href="./assets/fontawesome-free/css/all.min.css">
             <!-- <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+            <style>
+                  .flip-card {
+                        background-color: transparent;
+                        width: 100%;
+                        height: 15rem;
+                        perspective: 1000px;
+                  }
+
+                  .flip-card-inner {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.6s;
+                        transform-style: preserve-3d;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                  }
+
+                  .flip-card:hover .flip-card-inner {
+                        transform: rotateY(180deg);
+                  }
+
+                  .flip-card-front,
+                  .flip-card-back {
+                        position: absolute;
+                        width: 100%;
+                        height: 15rem;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        background-color: #2980b9;
+                  }
+
+                  .flip-card-front {
+                        color: white;
+                  }
+
+                  .flip-card-back {
+                        /* width: 100%;
+                        height: 16rem; */
+                        /* background-color: pink;
+                        color: rgb(21, 20, 20); */
+                        transform: rotateY(180deg);
+                  }
+            </style>
 
       </head>
 
@@ -29,10 +73,10 @@
                                     </button>
                                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                           <div class="navbar-nav">
-                                                <a class="nav-link" aria-current="page" href="#">HOME</a>
-                                                <a class="nav-link" href="#">BLOG</a>
-                                                <a class="nav-link" href="#">CONTACT</a>
-                                                <a class="nav-link">SERVICE</a>
+                                                <a class="nav-link" aria-current="page" href="#">About us</a>
+                                                <a class="nav-link" href="#">Packages</a>
+                                                <a class="nav-link" href="#">Tour Places</a>
+                                                <a class="nav-link">Contact</a>
                                           </div>
                                     </div>
                               </div>
@@ -67,7 +111,7 @@
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/austrelia.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="austrelia" />
-                                          <div class="card-body  bg-light">
+                                          <div class="card-body  bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> AUSTRALIA</h5>
                                                 <p class="card-text" style="text-align: justify;">
@@ -83,14 +127,14 @@
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/bali.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="bali" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> BALI</h5>
                                                 <p class="card-text" style="text-align: justify;">
                                                       Bali is the most popular Indonesian island known for its natural
                                                       settings, scenic beaches, traditional culture, rich history,
                                                       creativity, art and crafts, and the genuine warmth of the local
-                                                      people
+                                                      people.
                                                 </p>
                                           </div>
                                     </div>
@@ -100,15 +144,13 @@
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/dubai.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="dubai" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> DUBAI</h5>
                                                 <p class="card-text" style="text-align: justify;">
                                                       Dubai is famous for wealth, being expensive, and being a popular
-                                                      luxury travel destination, but Dubai is also famous for its souks,
-                                                      the Dubai Creek, some history and culture, camel riding, dune
-                                                      bashing and worker exploitation
-                                                </p>
+                                                      luxury travel destination, but it is also famous for its souks,
+                                                      the Dubai Creek,camel riding, some history and culture. </p>
                                           </div>
                                     </div>
                               </div>
@@ -117,14 +159,14 @@
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/france.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="france" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> FRANCE</h5>
                                                 <p class="card-text" style="text-align: justify;">
                                                       France is historically recognized as the country of literature,
                                                       philosophy, luxury and arts… It is also renowned for its
-                                                      technological skills, the entrepreneurial spirit of its people,
-                                                      and its great capacity for innovation.
+                                                      technological skills and its great capacity for innovation.Paris
+                                                      is the capital of France.
                                                 </p>
                                           </div>
                                     </div>
@@ -135,16 +177,14 @@
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/italy.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="italy" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> ITALY</h5>
                                                 <p class="card-text" style="text-align: justify;">
                                                       Italy is well-known for its architecture, culture, art, opera,
                                                       literature, film, and fashion. This is one of the best countries
                                                       to go on a foreign tour. The country is known for its mesmerizing
-                                                      topography, pristine beaches, historical artifacts, monuments, and
-                                                      more.
-                                                </p>
+                                                      topography, pristine beaches.
                                           </div>
                                     </div>
                               </div>
@@ -152,9 +192,25 @@
                               <!--6th image-->
                               <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                                     <div class="card" style="width: 100%">
+                                          <img src="./assets/images/singapore.avif" class="card-img-top"
+                                                style="width: 100%; height: 15rem;" alt="singapore" />
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
+                                                <h5 class="card-title"><i class="fas fa-map-marker-alt"
+                                                            style='font-size:18px'></i> SINGAPORE</h5>
+                                                <p class="card-text" style="text-align: justify;">
+                                                      Singapore is a city, a capital and a state all at once, making it
+                                                      one of only three City States in the world.Singapore is famous for
+                                                      its melting pot of food hubs, tidiness, and shopping
+                                                      centres.
+                                          </div>
+                                    </div>
+                              </div>
+                              <!--7th image-->
+                              <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                                    <div class="card" style="width: 100%">
                                           <img src="./assets/images/jermany.jpg" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="germany" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> GERMANY</h5>
                                                 <p class="card-text" style="text-align: justify;">
@@ -166,37 +222,20 @@
                                           </div>
                                     </div>
                               </div>
-                              <!--7th image-->
-                              <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                                    <div class="card" style="width: 100%">
-                                          <img src="./assets/images/singapore.avif" class="card-img-top"
-                                                style="width: 100%; height: 15rem;" alt="singapore" />
-                                          <div class="card-body bg-light">
-                                                <h5 class="card-title"><i class="fas fa-map-marker-alt"
-                                                            style='font-size:18px'></i> SINGAPORE</h5>
-                                                <p class="card-text" style="text-align: justify;">
-                                                      Singapore has the World's busiest port. Singapore is a city, a
-                                                      capital and a state all at once, making it one of only three City
-                                                      States in the world.Its contemporary modern culture consists of a
-                                                      combination of Asian and European cultures, mainly by Chinese
-                                                      descents, South Asian, East Asian and Eurasian influences.
-                                                </p>
-                                          </div>
-                                    </div>
-                              </div>
+
                               <!--8th image-->
                               <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                                     <div class="card" style="width: 100%">
                                           <img src="./assets/images/vietnam.avif" class="card-img-top"
                                                 style="width: 100%; height: 15rem;" alt="vietnam" />
-                                          <div class="card-body bg-light">
+                                          <div class="card-body bg-light" style="height: 16.5rem;">
                                                 <h5 class="card-title"><i class="fas fa-map-marker-alt"
                                                             style='font-size:18px'></i> VIETNAM</h5>
                                                 <p class="card-text" style="text-align: justify;">
                                                       Vietnam, known as the land of “Ascending Dragon”, is a
                                                       one-of-a-kind place. Apart from being a spectacular destination
                                                       Vietnam is famous for its amazing cuisine and fun
-                                                      activities.Vietnam is home to the largest cave in the world.
+                                                      activities.
                                                 </p>
                                           </div>
                                     </div>
@@ -277,46 +316,93 @@
             </div>
             <div class="container mt-2">
                   <div class="row">
-                        <div class="column">
-                              <div class="card mt-1">
-                                    <img src="./assets/images/passionate travel.jpg" class="card-img-top" />
+                        <div class="flip-card">
+                              <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                          <h4 class="card-title text-center mt-3"> <i class='fas fa-globe'
+                                                      style="color: black;"></i>
+                                                Passionate Travel </h4>
+                                          <p class="card-text mt-2" style="text-align: justify;">“Once the travel
+                                                bug bites there is no known antidote, and I know that I
+                                                shall be happily infected until the end of my life.”― Michael
+                                                Palin</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                          <img src="./assets/images/passionate travel.jpg"
+                                                style="width: 100%; height: 15rem;">
+                                    </div>
                               </div>
                         </div>
-                        <div class="column">
-                              <div class="card mt-1" style="background-color: rgb(167, 170, 172);">
-                                    <h4 class="card-title text-center mt-3"> &#127760; Passionate
-                                          Travel
-                                    </h4>
-                                    <p class="card-text mt-2" style="text-align: justify;">“Once the travel
-                                          bug bites there is no known antidote, and I know that I
-                                          shall be happily infected until the end of my life.”― Michael
-                                          Palin</p>
+                        <div class="row mt-2">
+                              <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                          <div class="flip-card-front">
+                                                <h4 class="card-title text-center mt-3"><i class='fas fa-map-marked-alt'
+                                                            style="color: black;"></i>
+                                                      Beautifull Places</h4>
+                                                <p class="card-text mt-2" style="text-align: justify;">There is so
+                                                      much in this world that you have yet to explore.Beautifull
+                                                      places are almost alive!When you visit them,you can feel
+                                                      their breath.</p>
+                                          </div>
+                                          <div class="flip-card-back">
+                                                <img src="./assets/images/beautifull place.jpg"
+                                                      style="width: 100%; height: 15rem;">
+                                          </div>
+                                    </div>
                               </div>
                         </div>
+                        <div class="row mt-2">
+                              <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                          <div class="flip-card-front">
+                                                <h4 class="card-title text-center mt-3"><img
+                                                            src="./assets/images/adventure icon.png"
+                                                            style="width: 30px; height: 35px;">
+                                                      Adventure Travel</h4>
+                                                <p class="card-text mt-2" style="text-align: justify;">Adventure
+                                                      travel’s one of the most popular travel types you’ll come
+                                                      across.The goal is simple: push yourself to do new, exciting, and
+                                                      heart-thumping things in beautiful parts of the world..</p>
 
-                        <div class="column">
-                              <div class="card mt-1">
-                                    <img src="./assets/images/beautifull place.jpg" class="card-img-top" ; />
+                                          </div>
+                                          <div class="flip-card-back">
+                                                <img src="./assets/images/adventure travel.jpg"
+                                                      style="width: 100%; height: 15rem;">
+                                          </div>
+                                    </div>
                               </div>
-                        </div>
-                        <div class="column">
-                              <div class="card mt-1" style="background-color: rgb(167, 170, 172);">
-                                    <h4 class="card-title text-center mt-3"><i class='fas fa-map-marked-alt'></i>
-                                          Beautifull Places</h4>
-                                    <p class="card-text mt-2" style="text-align: justify;">There is so
-                                          much in this world that you have yet to explore.Beautifull
-                                          places are almost alive!When you visit them,you can feel
-                                          their breath.</p>
-                                    Travel
-                                    </h4>
+                              <div class="row mt-2">
+                                    <div class="flip-card">
+                                          <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                      <h4 class="card-title text-center mt-3"><img
+                                                                  src="./assets/images/solo travel icon.jpg"
+                                                                  style="width: 30px; height: 35px;">
+                                                            Solo Travel</h4>
+                                                      <p class="card-text mt-2" style="text-align: justify;">Solo travel
+                                                            is a travel type where an individual explores a new
+                                                            destination
+                                                            independently without the companionship of friends or
+                                                            family. Travel types Family.Solo traveling will help you
+                                                            reconnect
+                                                            with yourself and find your purpose.</p>
+                                                </div>
+                                                <div class="flip-card-back">
+                                                      <img src="./assets/images/solo travel.jpg"
+                                                            style="width: 100%; height: 15rem;">
+                                                </div>
+                                          </div>
+                                    </div>
                               </div>
                         </div>
                   </div>
             </div>
             <!--footer-->
-            <div class=" container-fluid">
+            <div class=" container-fluid mt-4">
                   <div class="footer">
-                        <h3 style="text-align: center; margin-top: 10px;">Fly high
+                        <h3 style="text-align: center; margin-top: 10px;"><i class='fas fa-plane-departure'
+                                    style='font-size:20px;'></i> Fly high
                         </h3>
                         <div class="row">
                               <div class="col col-md-3 p-3 text-center"><i class="fab fa-facebook"
@@ -333,7 +419,7 @@
                               </div>
                         </div>
                         <div class="row">
-                              <i style="text-align: center;">"Travel makes one
+                              <i style="text-align: center; color: blue;">"Travel makes one
                                     modest.You see what a tiny place
                                     you
                                     occupy in the world"</i>
