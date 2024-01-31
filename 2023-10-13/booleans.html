@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html>
-      <head>
-            <title>Boolean Data Type</title>
-      </head>
-      <body>
-            <p id="result"></p>
-            <script>
-                  var a = 10;
-                  var b = 5;
-                  var c = Boolean(a>b);
-                  document.getElementById("result").innerHTML=c;
 
-                  var x = 0;
-                  document.getElementById("result").innerHTML=Boolean(x);
+<head>
+      <title>Boolean Data Type</title>
+</head>
 
-                  var x = "";
-                  document.getElementById("result").innerHTML=Boolean(x);
+<body>
+      <p id="result"></p>
+      <script>
+            // var a = 10;
+            // var b = 5;
+            // var c = Boolean(a > b);
+            // document.getElementById("result").innerHTML = c;
 
-                  var x;
-                  document.getElementById("result").innerHTML=Boolean(x);
+            // var x = 0;
+            // document.getElementById("result").innerHTML = Boolean(x);
 
-                  var x = "true";
-                  document.getElementById("result").innerHTML=Boolean(x);
+            // var x = "";
+            // document.getElementById("result").innerHTML = Boolean(x);
 
-                  var x = "true"/10;
-                  document.getElementById("result").innerHTML=Boolean(x);
+            // var x;
+            // document.getElementById("result").innerHTML = Boolean(x);
+
+            // var x = "true";
+            // document.getElementById("result").innerHTML = Boolean(x);
+
+            // var x = "true" / 10;
+            // document.getElementById("result").innerHTML = Boolean(x);
+
+
+            const person = [
+                  { Name: "Deepak", Country: "USA" },
+                  { Name: "Roopa", Country: "IND" },
+                  { Name: "Swaroopa", Country: "USA" },
+                  { Name: "Deepaika", Country: "IND" },
+                  { Name: "Rani", Country: "UK" },
+                  { Name: "Aadi", Country: "UK" }
+            ]
+            let count = person.reduce((acc, cur) => {
+                  acc[cur.Country] = acc[cur.Country] > 0 ? acc[cur.Country] + 1 : 1
+                  return acc
+            }, {})
+
+            console.log(count);
 
 
 
+      </script>
 
+</body>
 
-            </script>
-            
-      </body>
 </html>
