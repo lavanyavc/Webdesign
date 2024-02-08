@@ -42,10 +42,14 @@
 // $c=preg_replace($b,"Advith",$a);
 // echo $c;
 
-$a="PHP is a programming language";
-$b="/PHP/";
-$c=preg_replace($b,"JS",$a);
-echo $c;
+// $a="PHP is a programming language";
+// $b="/PHP/";
+// $c=preg_replace($b,"JS",$a);
+// echo $c;
+
+
+
+
 
 
 

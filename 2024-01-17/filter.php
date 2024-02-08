@@ -90,4 +90,9 @@ var_dump(filter_var($o,FILTER_VALIDATE_BOOLEAN,FILTER_NULL_ON_FAILURE));
 
 print("Hello World");
 
+
+$num=51;
+$result = ($num % 2==0) ? "Even Number" : "Odd Number";
+echo $result;
+
 ?>
