@@ -10,16 +10,16 @@ function validSubmit() {
                   nameError.innerHTML = "*Use alphabets only*";
                   return false;
             }
-            nameError.innerHTML = "valid";
-            return true;
-      }
+            // nameError.innerHTML = "valid";
+      //       return true;
+      // }
 
-      function validDate() {
-            var dateError = document.getElementById("dob-error");
-            var birthDate = document.getElementById("dob").value;
-            if (dob.length == 0) {
-                  dateError.innerHTML = "*DOB is required*";
-                  return false;
+      // function validDate() {
+      //       var dateError = document.getElementById("dob-error");
+      //       var birthDate = document.getElementById("dob").value;
+      //       if (dob.length == 0) {
+      //             dateError.innerHTML = "*DOB is required*";
+      //             return false;
             }
             if (!birthDate.match(/^[0-9]{2}[\/]{1}[0-9]{2}[\/]{1}[0-9]{4}$/g)) {
                   dateError.innerHTML = "*Use Numbers only*"
